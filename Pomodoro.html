@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilos.css" rel="stylesheet">
+        <link href="D:/users/Santiago/documentos/Practicas de programacion/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Técnica Pomodoro</title>
+
+    </head>
+    <body>
+        <h1> Pomodoro! </h1>
+
+        <div id="container">
+            <div id="app-pomodoro">
+                <header class="flex-center">
+                    <h2> Sesión </h2>
+
+                    <div id="time-left"><input id="prodId" name="prodId" type="hidden" >
+
+                    </div>
+
+                    <div>
+                        <button id="start_stop" value="Comenzar"> <i class="fas fa-play" ></i>Comenzar</button>
+                        <button id="reset"><i class="fas fa-sync-alt"></i>Resetear</button>
+                    </div>
+                </header>
+                <footer>
+                    <div class="time-adjust-w">
+                        <h3>Duración de la Sesión</h3>
+                        <div class="time-adjust">
+                            <i class="fas fa-angle-up up-session" ></i>
+                            <p><span id="duracion"></span>  Min </p>   
+                            <i class="fas fa-angle-down  down-session"></i>
+                        </div>
+                    </div>
+                    <div class="time-adjust-w">
+                        <h3>Tiempo Descanso</h3>
+                        <div class="time-adjust">
+                            <span><i class="fas fa-angle-up"></i></span>
+                            <p><span id="descanso"> </span>  Min </p>
+                           <span><i class="fas fa-angle-down"></i></span> 
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </body>
+    <script type="text/javascript"  src="Js-pomodoro.js"></script>
+</html>
